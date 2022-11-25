@@ -4,8 +4,9 @@ Introduction
 I wanted to have the excellent borgbackup (https://borgbackup.readthedocs.io) installed on my Turris Omnia router (equipped with 2GB of RAM and SATA HDDs which should be sufficient for running a borg server).
 
 I tried several things before:
-    - the armv7 standalone binaries provided at https://borg.bauerj.eu/ don't work (libc incompatibity)
-    - installing borg in a docker alpine container, did not work out either (RPC errors between client and server). I finally gave up, also because spawning a new container each time to run borg costs a lot on this router.
+
+- the armv7 standalone binaries provided at https://borg.bauerj.eu/ don't work (libc incompatibity)
+- installing borg in a docker alpine container, did not work out either (RPC errors between client and server). I finally gave up, also because spawning a new container each time to run borg costs a lot on this router.
 
 So I ended up crafting native packages.
 
@@ -47,7 +48,7 @@ $ opkg --force-depends install *.ipk
 Useful links
 ============
 
-* https://openwrt.org/docs/guide-developer/packages
-* https://notes.iopush.net/blog/2017/how-to-setup-an-openwrt-repo/
-* https://wiki.turris.cz/doc/en/public/custom_packages
-* https://forum.openwrt.org/t/how-to-include-additional-packages-using-cli-without-going-to-make-menuconfig/88558
+- https://openwrt.org/docs/guide-developer/packages
+- https://notes.iopush.net/blog/2017/how-to-setup-an-openwrt-repo/
+- https://wiki.turris.cz/doc/en/public/custom_packages
+- https://forum.openwrt.org/t/how-to-include-additional-packages-using-cli-without-going-to-make-menuconfig/88558
