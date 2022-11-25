@@ -1,11 +1,11 @@
 #
-# Copyright (C) 2006-2015 OpenWrt.org
+# Copyright (C) 2022 Julien Malik <julien.malik@paraiso.me>
 #
 # This is free software, licensed under the GNU General Public License v2.
 # See /LICENSE for more information.
 #
 
-# credits goes to:
+# initial implementation kindly stolen from (and then updated) :
 # https://forum.openwrt.org/t/xxhash-makefile/118426
 
 include $(TOPDIR)/rules.mk
