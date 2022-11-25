@@ -17,8 +17,9 @@ Build packages
 ==============
 
 ```
-$ mkdir $HOME/turris
-$ cd $HOME/turris
+$ WORKDIR=$HOME/turris
+$ mkdir $WORKDIR
+$ cd $WORKDIR
 $ git clone https://github.com/julienmalik/package-feed-borg
 $ git clone https://gitlab.nic.cz/turris/os/build turris-build
 $ cd turris-build
@@ -46,7 +47,7 @@ $ opkg --force-depends install *.ipk
 Useful links
 ============
 
-https://openwrt.org/docs/guide-developer/packages
-https://notes.iopush.net/blog/2017/how-to-setup-an-openwrt-repo/
-https://wiki.turris.cz/doc/en/public/custom_packages
-https://forum.openwrt.org/t/how-to-include-additional-packages-using-cli-without-going-to-make-menuconfig/88558
+* https://openwrt.org/docs/guide-developer/packages
+* https://notes.iopush.net/blog/2017/how-to-setup-an-openwrt-repo/
+* https://wiki.turris.cz/doc/en/public/custom_packages
+* https://forum.openwrt.org/t/how-to-include-additional-packages-using-cli-without-going-to-make-menuconfig/88558
