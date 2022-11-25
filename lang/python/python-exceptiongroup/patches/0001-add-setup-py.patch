@@ -1,0 +1,24 @@
+diff --git a/setup.py b/setup.py
+new file mode 100644
+index 0000000..842d673
+--- /dev/null
++++ b/setup.py
+@@ -0,0 +1,18 @@
++#!/usr/bin/env python
++
++import setuptools
++
++setuptools.setup(
++      name='exceptiongroup',
++      version='1.0.4',
++      description='Backport of PEP 654 (exception groups)',
++      author='Alex Grönholm',
++      author_email='Alex Grönholm <alex.gronholm@nextday.fi>',
++      url='https://github.com/agronholm/exceptiongroup',
++      packages=['exceptiongroup'],
++      package_data={'': ['*']},
++      package_dir={'': 'src'},
++      extras_require={'test': ['pytest >= 6']},
++      python_requires='>=3.7',
++)
++
