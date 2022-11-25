@@ -1,3 +1,18 @@
+Introduction
+============
+
+I wanted to have the excellent borgbackup (https://borgbackup.readthedocs.io) installed on my Turris Omnia router (equipped with 2GB of RAM and SATA HDDs which should be sufficient for running a borg server).
+
+I tried several things before:
+    - the armv7 standalone binaries provided at https://borg.bauerj.eu/ don't work (libc incompatibity)
+    - installing borg in a docker alpine container, did not work out either (RPC errors between client and server). I finally gave up, also because spawning a new container each time to run borg costs a lot on this router.
+
+So I ended up crafting native packages.
+
+This project came from my own need to make packages for Turris Omnia (currently 6.0, based off of OpenWRT 21.02), thus I only tested them on this platform.
+
+However the packages should be compatible with stock OpenWRT (particularly 21.02) if you want to build them for your own router.
+
 Build packages
 ==============
 
@@ -17,7 +32,6 @@ $ make package/borgbackup/compile
 $ ls build/bin/packages/arm_cortex-a9_vfpv3-d16/borg -al
 ```
 
-
 Install packages manually
 =========================
 
@@ -28,7 +42,6 @@ $ cd /tmp/borg
 $ rm *-src_* xxhash_*
 $ opkg --force-depends install *.ipk
 ```
-
 
 Useful links
 ============
